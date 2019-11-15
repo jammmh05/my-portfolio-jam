@@ -48,3 +48,37 @@
         }
     }
 }
+
+.about-container
+{
+    background-color: #f6d671;
+    padding: 100px 0px;
+    .about
+    {
+        .about__content
+        {
+            .about__content-title
+            {
+                line-height: 2.5rem;
+                .title-secondary
+                {
+                    font-family: 'Montserrat';
+                    font-weight: 400;
+                    font-size: 15px;
+                    color: #222222;
+                }
+                .title-primary
+                {
+                    font-family: 'Barlow Condensed';
+                    font-weight: 600;
+                    font-size: 30px;
+                    color: #ffffff;
+                    span
+                    {
+                        color: #222222;
+                    }
+                }
+            }
+        }
+    }
+}

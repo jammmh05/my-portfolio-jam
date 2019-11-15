@@ -9,10 +9,13 @@
     .navigation-container
     {
         display: flex;
-        flex-direction: column;
         .navigation-logo
         {
-
+            margin-right: auto;
+            img
+            {
+                width: 50px;
+            }
         }
         .navigation-links
         {
@@ -23,7 +26,7 @@
                 flex-direction: row;
                 .nav-items
                 {
-                    margin-left: 25px;
+                    margin-left: 50px;
                     .nav-link
                     {
                         color: #222222;
