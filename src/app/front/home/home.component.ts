@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import 'bootstrap';
+import * as $ from 'jquery';
+
 
 @Component({
   selector: 'app-home',

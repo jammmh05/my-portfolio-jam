@@ -1,8 +1,44 @@
-@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:300,400,500,600,700&display=swap');
+@import "../../app.component";
 
-p
+.header-container
 {
-    font-family: 'Barlow Condensed';
-    font-size: 25px;
-    font-weight: 600;
+    position: fixed;
+    width: 100%;
+    padding: 15px;
+    background-color: #ffffff;
+    .navigation-container
+    {
+        display: flex;
+        flex-direction: column;
+        .navigation-logo
+        {
+
+        }
+        .navigation-links
+        {
+            display: inline-block;
+            margin-left: auto;
+            .navbar-nav
+            {
+                flex-direction: row;
+                .nav-items
+                {
+                    margin-left: 25px;
+                    .nav-link
+                    {
+                        color: #222222;
+                        font-family: 'Montserrat';
+                        font-size: 13px;
+                        font-weight: 400;
+                        text-decoration: none;
+                        transition: .5s all ease;
+                    }
+                }
+                .nav-items:first-child
+                {
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
 }
