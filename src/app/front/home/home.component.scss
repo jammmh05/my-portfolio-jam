@@ -60,6 +60,7 @@
             .about__content-title
             {
                 line-height: 2.5rem;
+                margin-bottom: 50px;
                 .title-secondary
                 {
                     font-family: 'Montserrat';
@@ -73,6 +74,86 @@
                     font-weight: 600;
                     font-size: 30px;
                     color: #ffffff;
+                    span
+                    {
+                        color: #222222;
+                    }
+                }
+            }
+            .about__content-content
+            {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 30px;
+                .content-info
+                {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-gap: 15px;
+                    .content-info__container
+                    {
+                        line-height: 2rem;
+                        color: #222222;
+                        .info__label
+                        {
+                            font-family: 'Montserrat';
+                            font-weight: 400;
+                            font-size: 13px;
+                            opacity: .8;
+                        }
+                        .info__myinfo
+                        {
+                            font-family: 'Montserrat';
+                            font-weight: 600;
+                            font-size: 13px;
+                            line-height: 1.5rem;
+                        }
+                    }
+                }
+                .content-image
+                {
+                    background-color: #ffffff;
+                    margin: auto;
+                    text-align: center;
+                    width: 280px;
+                    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.3);
+                    img
+                    {
+                        object-fit: contain;
+                        width: 280px;
+                        height: 350px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.work-container
+{
+    background-color: #ffffff;
+    padding: 100px 0px;
+    .work
+    {
+        .work__content
+        {
+            .work__content-title
+            {
+                line-height: 2.5rem;
+                margin-bottom: 50px;
+                .title-secondary
+                {
+                    font-family: 'Montserrat';
+                    font-weight: 400;
+                    font-size: 15px;
+                    color: #222222;
+                }
+                .title-primary
+                {
+                    font-family: 'Barlow Condensed';
+                    font-weight: 600;
+                    font-size: 30px;
+                    color: #f6d671;
                     span
                     {
                         color: #222222;
