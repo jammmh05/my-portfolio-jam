@@ -6,9 +6,11 @@
     width: 100%;
     padding: 15px;
     background-color: #ffffff;
+    z-index: 100;
     .navigation-container
     {
         display: flex;
+        align-items: center;
         .navigation-logo
         {
             margin-right: auto;

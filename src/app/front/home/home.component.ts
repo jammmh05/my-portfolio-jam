@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import 'bootstrap';
 import * as $ from 'jquery';
+import Swiper from 'swiper';
 
 
 @Component({
@@ -13,6 +14,19 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.multiSlider();
+  }
+
+  multiSlider()
+  {
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
   }
 
 }
