@@ -4,9 +4,10 @@
 {
     position: fixed;
     width: 100%;
-    padding: 15px;
+    padding: 25px 0px;
     background-color: #ffffff;
     z-index: 100;
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.1);
     .navigation-container
     {
         display: flex;
@@ -42,6 +43,135 @@
                 .nav-items:first-child
                 {
                     margin-left: 0px;
+                }
+            }
+        }
+    }
+}
+
+.footer-container
+{
+    padding: 100px 0px;
+    background-color: #222222;
+    .contact
+    {
+        padding-bottom: 50px;
+        border-bottom: solid 1px rgba(#ffffff, .4);
+        .contact-content
+        {
+            .contact__content-title
+            {
+                line-height: 2.5rem;
+                margin-bottom: 50px;
+                .title-secondary
+                {
+                    font-family: 'Montserrat';
+                    font-weight: 400;
+                    font-size: 15px;
+                    color: #ffffff;
+                    opacity: .8;
+                }
+                .title-primary
+                {
+                    font-family: 'Barlow Condensed';
+                    font-weight: 600;
+                    font-size: 30px;
+                    color: #F6D671;
+                    span
+                    {
+                        color: #ffffff;
+                    }
+                }
+            }
+            .contact__content-content
+            {
+                display: flex;
+                align-items: center;
+                .contact-info
+                {
+                    display: flex;
+                    align-items: center;
+                    margin-left: 50px;
+                    .contact-img
+                    {
+                        margin-right: 25px;
+                        img
+                        {
+                            width: 100px;
+                        }
+                    }
+                    .contact-info__content
+                    {
+                        line-height: 1.8rem;
+                        .info-label
+                        {
+                            font-family: 'Montserrat';
+                            font-weight: 400;
+                            font-size: 13px;
+                            color: #ffffff;
+                        }
+                        .info-desc
+                        {
+                            font-family: 'Montserrat';
+                            font-weight: 600;
+                            font-size: 13px;
+                            color: #F6D671;
+                        }
+                    }
+                }
+                .contact-info:first-child
+                {
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
+    .footer
+    {
+        padding-top: 50px;
+        .footer-content
+        {
+            .footer-content__image
+            {
+                text-align: center;
+                img
+                {
+                    filter: invert(100);
+                    width: 80px;
+                }
+            }
+            .footer-content-links
+            {
+                display: flex;
+                text-align: center;
+                margin-top: 50px;
+                .navbar-nav
+                {
+                    flex-direction: row;
+                    margin: auto;
+                    .nav-items
+                    {
+                        margin-left: 50px;
+                        .nav-link
+                        {
+                            color: #ffffff;
+                            font-family: 'Montserrat';
+                            font-size: 13px;
+                            font-weight: 400;
+                            text-decoration: none;
+                            opacity: .7;
+                            transition: .5s all ease;
+                            &:hover
+                            {
+                                opacity: 1;
+                                transition: .5s all ease;
+                            }
+                        }
+                    }
+                    .nav-items:first-child
+                    {
+                        margin-left: 0px;
+                    }
                 }
             }
         }
