@@ -53,6 +53,8 @@
 {
     background-color: #f6d671;
     padding: 100px 0px;
+    position: relative;
+    overflow: hidden;
     .about
     {
         .about__content
@@ -117,6 +119,7 @@
                     text-align: center;
                     width: 280px;
                     box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.3);
+                    z-index: 100;
                     img
                     {
                         object-fit: contain;
@@ -126,6 +129,102 @@
                 }
             }
         }
+    }
+    // shape-object
+    .shape-circle-border
+    {
+        position: absolute;
+        top: -110px;
+        left: -110px;
+        width: 250px;
+    }
+    .shape-box-dotted-sm-white
+    {
+        position: absolute;
+        top: 50px;
+        left: 30px;
+        width: 30px;
+    }
+    .shape-multiple-slice
+    {
+        position: absolute;
+        top: 40px;
+        left: 95px;
+        width: 400px;
+    }
+    .shape-tower-line
+    {
+        position: absolute;
+        bottom: -60px;
+        left: 30px;
+        width: 60px;
+    }
+    .shape-box-dotted-sm
+    {
+        position: absolute;
+        bottom: 30px;
+        left: 80px;
+        width: 140px;
+    }
+    .shape-box-border
+    {
+        position: absolute;
+        top: -70px;
+        right: -25px;
+        width: 200px;
+    }
+    .shape-box-border-sm
+    {
+        position: absolute;
+        top: 80px;
+        right: 120px;
+        width: 85px;
+    }
+    .shape-box-white
+    {
+        position: absolute;
+        top: -5px;
+        right: -50px;
+        width: 150px;
+        opacity: 0.4;
+    }
+    .shape-circle-multiple
+    {
+        position: absolute;
+        bottom: -90px;
+        right: -80px;
+        width: 230px;
+        opacity: .6;
+    }
+    .shape-box-dotted-lg
+    {
+        position: absolute;
+        top: 190px;
+        right: 345px;
+        width: 225px;
+    }
+    .shape-wave-1
+    {
+        position: absolute;
+        bottom: 80px;
+        right: 520px;
+        width: 100px;
+        opacity: .7;
+    }
+    .shape-wave-2
+    {
+        position: absolute;
+        top: 280px;
+        right: 160px;
+        width: 100px;
+        opacity: .7;
+    }
+    .shape-multiple-arrow
+    {
+        position: absolute;
+        bottom: 80px;
+        right: 200px;
+        width: 20px;
     }
 }
 
@@ -160,9 +259,9 @@
                     }
                 }
             }
-
             .work__content-content
             {
+                position: relative;
                 .swiper-container
                 {
                     width: 100%;
@@ -181,8 +280,60 @@
                         }
                     }
                 }
+                .swiper-btn
+                {
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    display: flex;
+                    align-content: center;
+                    z-index: 100;
+                    .swiper-next
+                    {
+                        outline: 0;
+                        cursor: pointer;
+                        margin-left: 10px;
+                        img
+                        {
+                            width: 50px;
+                            z-index: 100;
+                            border-radius: 50%;
+                            transition: .5s all ease;
+                        }
+                        &:hover
+                        {
+                            img
+                            {
+                                box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.3);
+                                transition: .5s all ease;
+                            }
+                        }
+                    }
+                    .swiper-prev
+                    {
+                        outline: 0;
+                        cursor: pointer;
+                        margin: auto;
+                        img
+                        {
+                            width: 35px;
+                            z-index: 100;
+                            border-radius: 50%;
+                            opacity: .8;
+                            transition: .5s all ease;
+                        }
+                        &:hover
+                        {
+                            img
+                            {
+                                box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2);
+                                opacity: 1;
+                                transition: .5s all ease;
+                            }
+                        }
+                    }
+                }
             }
-
         }
     }
 }

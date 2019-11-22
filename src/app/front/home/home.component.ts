@@ -26,6 +26,10 @@ export class HomeComponent implements OnInit {
         el: '.swiper-pagination',
         clickable: true,
       },
+      navigation: {
+        nextEl: '.swiper-next',
+        prevEl: '.swiper-prev',
+      },
     });
   }
 
