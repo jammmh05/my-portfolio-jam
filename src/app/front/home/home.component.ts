@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import 'bootstrap';
 import * as $ from 'jquery';
 import Swiper from 'swiper';
+import Rellax from 'rellax';
+import lax from 'lax.js';
 
 
 @Component({
@@ -15,6 +17,8 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.multiSlider();
+    this.ParallaxHome();
+    this.LaxforObjexts();
   }
 
   multiSlider()
@@ -31,6 +35,27 @@ export class HomeComponent implements OnInit {
         prevEl: '.swiper-prev',
       },
     });
+  }
+
+  ParallaxHome()
+  {
+    const boxframe = new Rellax('.shape-box-dotted-lg');
+    const arrowup = new Rellax('.shape-multiple-arrow');
+    const boxdottedsm = new Rellax('.shape-box-dotted-sm-white');
+  }
+
+  LaxforObjexts()
+  {
+    window.onload = function() {
+      lax.setup() // init
+
+      const updateLax = () => {
+        lax.update(window.scrollY)
+        window.requestAnimationFrame(updateLax)
+      }
+
+      window.requestAnimationFrame(updateLax)
+    }
   }
 
 }
