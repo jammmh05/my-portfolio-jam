@@ -34,6 +34,23 @@ export class HomeComponent implements OnInit {
         nextEl: '.swiper-next',
         prevEl: '.swiper-prev',
       },
+      breakpoints: {
+        1366: {
+          slidesPerView: 3,
+        },
+        768: {
+					slidesPerView: 1,
+        },
+        425: {
+          slidesPerView: 1,
+        },
+        375: {
+          slidesPerView: 1,
+        },
+        320: {
+          slidesPerView: 1,
+        }
+      }
     });
   }
 

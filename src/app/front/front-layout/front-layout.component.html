@@ -1,3 +1,5 @@
+<div id="overlay" (click)="sideNavOff()"></div>
+
 <div class="header-container">
     <div class="container">
         <div class="navigation-container">
@@ -36,8 +38,48 @@
                 </ul>
             </div>
 
+            <div id="nav_list" (click)="sideNavOn()">
+                <img src="../../../assets/icon-hamburger.svg">
+            </div>
+
         </div>
     </div>
+</div>
+
+<!-- mobile-navigation -->
+
+<div class="side-nav">
+	<nav class="pushmenu pushmenu-left">
+		<div class="navbar sidenav__tabs">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="#home">
+						HOME
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#about">
+						ABOUT ME
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#work">
+						WORKS
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#experience">
+						EXPERIENCE
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#skills">
+						SKILLS
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
 </div>
 
 <router-outlet></router-outlet>
@@ -97,27 +139,27 @@
                 <div class="footer-content-links">
                     <ul class="navbar-nav">
                         <li class="nav-items">
-                            <a class="nav-link" href="/">
+                            <a class="nav-link" href="#home">
                                 HOME
                             </a>
                         </li>
                         <li class="nav-items">
-                            <a class="nav-link" href="/">
+                            <a class="nav-link" href="#about">
                                 ABOUT ME
                             </a>
                         </li>
                         <li class="nav-items">
-                            <a class="nav-link" href="/">
+                            <a class="nav-link" href="#work">
                                 WORKS
                             </a>
                         </li>
                         <li class="nav-items">
-                            <a class="nav-link" href="/">
+                            <a class="nav-link" href="#experience">
                                 EXPERIENCE
                             </a>
                         </li>
                         <li class="nav-items">
-                            <a class="nav-link" href="/">
+                            <a class="nav-link" href="#skills">
                                 CONTACT
                             </a>
                         </li>

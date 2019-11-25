@@ -12,10 +12,11 @@ export class FrontLayoutComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.smooth_scroll();
+	this.smooth_scroll();
+	this.sideNav();
   }
 
-  smooth_scroll(): void
+  	smooth_scroll(): void
 	{
 		var sections = $('section')
 		, nav = $('navbar-nav')
@@ -87,4 +88,26 @@ export class FrontLayoutComponent implements OnInit {
 		});
 	}
 
+	sideNav(): void
+	{
+		const $menuLeft = $('.pushmenu-left');
+		const $nav_list = $('#nav_list');
+
+		$nav_list.on("click", function () {
+			$(this).toggleClass('active');
+			/* $('.pushmenu-push').toggleClass('pushmenu-push-toright');*/
+			$menuLeft.toggleClass('pushmenu-open');
+		});
+	}
+
+	sideNavOn(): void
+	{
+		document.getElementById("overlay").style.display = "block";
+	}
+
+	sideNavOff(): void
+	{
+		document.getElementById("overlay").style.display = "none";
+		$('.pushmenu').removeClass("pushmenu-open");
+	}
 }
