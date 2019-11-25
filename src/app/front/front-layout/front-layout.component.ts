@@ -19,7 +19,7 @@ export class FrontLayoutComponent implements OnInit {
   	smooth_scroll(): void
 	{
 		var sections = $('section')
-		, nav = $('navbar-nav')
+		, nav = $('.navbar')
 		, nav_height = nav.outerHeight();
 
 		$(window).on('scroll', function () {

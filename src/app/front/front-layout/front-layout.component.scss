@@ -42,11 +42,20 @@
                     .nav-link
                     {
                         color: #222222;
-                        font-family: 'Montserrat';
-                        font-size: 13px;
-                        font-weight: 400;
+                        font-family: 'Barlow Condensed';
+                        font-size: 18px;
+                        font-weight: 600;
                         text-decoration: none;
                         transition: .5s all ease;
+                        &:hover
+                        {
+                            color: #F6D671;
+                            transition: .5s all ease;
+                        }
+                    }
+                    .active
+                    {
+                        color: #F6D671;
                     }
                 }
                 .nav-items:first-child
