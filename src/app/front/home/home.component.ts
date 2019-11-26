@@ -4,6 +4,7 @@ import * as $ from 'jquery';
 import Swiper from 'swiper';
 import Rellax from 'rellax';
 import lax from 'lax.js';
+import 'lightgallery';
 
 
 @Component({
@@ -19,6 +20,7 @@ export class HomeComponent implements OnInit {
     this.multiSlider();
     this.ParallaxHome();
     this.LaxforObjexts();
+    this.LightGallery();
   }
 
   multiSlider()
@@ -30,6 +32,10 @@ export class HomeComponent implements OnInit {
         el: '.swiper-pagination',
         clickable: true,
       },
+      autoplay: {
+				delay: 4000,
+				disableOnInteraction: false,
+			},
       navigation: {
         nextEl: '.swiper-next',
         prevEl: '.swiper-prev',
@@ -73,6 +79,13 @@ export class HomeComponent implements OnInit {
 
       window.requestAnimationFrame(updateLax)
     }
+  }
+
+  LightGallery()
+  {
+    $(document).ready(function() {
+      $("#lightgallery").lightGallery();
+    });
   }
 
 }
