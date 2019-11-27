@@ -140,11 +140,8 @@
                 }
                 .content-image
                 {
-                    background-color: #ffffff;
                     margin: auto;
                     text-align: center;
-                    width: 280px;
-                    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.3);
                     z-index: 100;
                     @media screen and (max-width: 425px)
                     {
@@ -152,7 +149,9 @@
                     }
                     img
                     {
-                        object-fit: contain;
+                        border: solid 8px #ffffff;
+                        border-radius: 4px;
+                        box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.3);
                         width: 280px;
                         height: 350px;
                     }
