@@ -5,6 +5,7 @@ import Swiper from 'swiper';
 import Rellax from 'rellax';
 import lax from 'lax.js';
 import 'lightgallery';
+import "lg-zoom";
 
 
 @Component({
@@ -27,7 +28,7 @@ export class HomeComponent implements OnInit {
   {
     var swiper = new Swiper('.swiper-container', {
       slidesPerView: 3,
-      spaceBetween: 30,
+      spaceBetween: 15,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -84,7 +85,10 @@ export class HomeComponent implements OnInit {
   LightGallery()
   {
     $(document).ready(function() {
-      $("#lightgallery").lightGallery();
+      $("#lightgallery").lightGallery({
+        zoom: 'zoom',
+
+      });
     });
   }
 
