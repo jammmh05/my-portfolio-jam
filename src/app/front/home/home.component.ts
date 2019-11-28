@@ -5,7 +5,7 @@ import Swiper from 'swiper';
 import Rellax from 'rellax';
 import lax from 'lax.js';
 import 'lightgallery';
-import "lg-zoom";
+import 'lg-zoom';
 
 
 @Component({

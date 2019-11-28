@@ -32,6 +32,7 @@
     "lg-video": "^1.2.2",
     "lg-zoom": "^1.1.0",
     "lightgallery": "^1.6.12",
+    "paroller.js": "^1.4.6",
     "popper.js": "^1.16.0",
     "rellax": "^1.10.0",
     "rxjs": "~6.4.0",

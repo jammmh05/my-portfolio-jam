@@ -2,7 +2,10 @@
 
 .home-container
 {
-    background-color: #f5f5f5;
+    background-image: url('../../../assets/myHomeBanner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     height: 100vh;
     .home
     {
@@ -17,6 +20,7 @@
             {
                 text-align: center;
                 line-height: 3rem;
+                color: #ffffff;
                 .title-secondary
                 {
                     font-family: 'Montserrat';
