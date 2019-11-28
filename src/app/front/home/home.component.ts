@@ -6,6 +6,7 @@ import Rellax from 'rellax';
 import lax from 'lax.js';
 import 'lightgallery';
 import 'lg-zoom';
+import 'paroller.js';
 
 
 @Component({
@@ -22,6 +23,7 @@ export class HomeComponent implements OnInit {
     this.ParallaxHome();
     this.LaxforObjexts();
     this.LightGallery();
+    this.ParollerParallax();
   }
 
   multiSlider()
@@ -90,6 +92,11 @@ export class HomeComponent implements OnInit {
 
       });
     });
+  }
+
+  ParollerParallax()
+  {
+    $('.home-container').paroller();
   }
 
 }
