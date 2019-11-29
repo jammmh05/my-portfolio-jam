@@ -99,4 +99,12 @@ export class HomeComponent implements OnInit {
     $('.home-container').paroller();
   }
 
+  downloadMyPDF()
+  {
+    let link = document.createElement("a");
+    link.download = "John-Paul-Sebastian-Details";
+    link.href = "../../../assets/my-cv.pdf";
+    link.click();
+  }
+
 }
