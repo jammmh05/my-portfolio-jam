@@ -29,11 +29,16 @@ export class HomeComponent implements OnInit {
   multiSlider()
   {
     var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 3,
-      spaceBetween: 15,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
       },
       autoplay: {
 				delay: 4000,
