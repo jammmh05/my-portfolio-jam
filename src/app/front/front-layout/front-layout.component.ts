@@ -12,11 +12,30 @@ export class FrontLayoutComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+	this.changeNavCSS();
 	this.smooth_scroll();
 	this.sideNav();
   }
 
-  	smooth_scroll(): void
+	changeNavCSS(): void
+	{
+		$(window).scroll(function() {
+			var scroll = $(window).scrollTop();
+			//console.log(scroll);
+			if (scroll >= 50) {
+				//console.log('a');
+				$(".header-container").addClass("change");
+			} else {
+				//console.log('a');
+				$(".header-container").removeClass("change");
+			}
+		});
+		// $(window).scroll(function(){
+		// 	$('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+		// });
+	}
+
+	smooth_scroll(): void
 	{
 		var sections = $('section')
 		, nav = $('.navbar')
@@ -37,7 +56,7 @@ export class FrontLayoutComponent implements OnInit {
 					nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
 				}
 			});
-    });
+	});
 
 		// nav.find('a').on('click', function () {
 		// 	var $el = $(this)
