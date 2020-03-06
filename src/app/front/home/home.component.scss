@@ -2,36 +2,51 @@
 
 .home-container
 {
-    background-image: url('../../../assets/my-Banner.jpg');
+    background-color: #ffffff;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
+    position: relative;
+    overflow: hidden;
     .home
     {
         display: flex;
-        align-content: center;
-        justify-content: center;
+        align-content: flex-start;
+        justify-content: flex-start;
         height: 100vh;
         .home__content
         {
-            margin: auto;
+            margin: auto auto auto 0px;
+            z-index: 1;
             .home__content-title
             {
-                text-align: center;
-                line-height: 3rem;
+                text-align: left;
+                line-height: 3.5rem;
                 color: #222222;
+                @media screen and (max-width: 425px)
+                {
+                    text-align: center;
+                }
                 .title-secondary
                 {
                     font-family: 'Montserrat';
                     font-weight: 600;
-                    font-size: 15px;
+                    font-size: 25px;
+                    @media screen and (max-width: 425px)
+                    {
+                        font-size: 20px;
+                    }
                 }
                 .title-primary
                 {
                     font-family: 'Barlow Condensed';
                     font-weight: 600;
-                    font-size: 40px;
+                    font-size: 60px;
+                    @media screen and (max-width: 425px)
+                    {
+                        font-size: 50px;
+                    }
                 }
                 .title-desc
                 {
@@ -42,8 +57,7 @@
             }
             .home__content-btn
             {
-                text-align: center;
-                margin-top: 30px;
+                margin-top: 20px;
                 button
                 {
                     width: 300px;
@@ -53,6 +67,87 @@
                     }
                 }
             }
+        }
+    }
+    // shape-object
+    .shape-circle {
+        background-color: #f6d671;
+        border-radius: 100%;
+        position: absolute;
+    }
+    .shape-circle-lg {
+        opacity: .5;
+        width: 600px;
+        height: 600px;
+        bottom: -150px;
+        left: -120px;
+        @media screen and (max-width: 425px)
+        {
+            width: 500px;
+            height: 500px;
+        }
+    }
+    .shape-circle-md {
+        width: 200px;
+        height: 200px;
+        bottom: 75px;
+        right: 300px;
+        @media screen and (max-width: 768px)
+        {
+            right: 200px;
+        }
+        @media screen and (max-width: 425px)
+        {
+            right: 20px;
+            width: 150px;
+            height: 150px;
+        }
+    }
+    .shape-circle-sm {
+        width: 100px;
+        height: 100px;
+        top: -30px;
+        right: 100px;
+        @media screen and (max-width: 768px)
+        {
+            top: -70px;
+            right: 300px;
+        }
+    }
+    .shape-stripe-lg {
+        object-fit: contain;
+        width: auto;
+        height: 550px;
+        position: absolute;
+        top: -80px;
+        right: 0;
+        @media screen and (max-width: 768px)
+        {
+            height: 350px;
+        }
+        @media screen and (max-width: 425px)
+        {
+            top: -230px;
+        }
+    }
+    .shape-stripe-md {
+        object-fit: contain;
+        width: auto;
+        height: 250px;
+        position: absolute;
+        bottom: -50px;
+        left: 0;
+    }
+    .shape-stripe-sm {
+        object-fit: contain;
+        width: auto;
+        height: 100px;
+        position: absolute;
+        top: 0;
+        left: 350px;
+        @media screen and (max-width: 768px)
+        {
+            display: none;
         }
     }
 }
@@ -164,17 +259,6 @@
         }
     }
     // shape-object
-    .shape-circle-border
-    {
-        position: absolute;
-        top: -200px;
-        left: -110px;
-        width: 250px;
-        @media screen and (max-width: 768px)
-        {
-            width: 210px;
-        }
-    }
     .shape-box-dotted-sm-white
     {
         position: absolute;
@@ -217,22 +301,6 @@
         @media screen and (max-width: 768px)
         {
             width: 120px;
-        }
-    }
-    .shape-box-border
-    {
-        position: absolute;
-        top: -70px;
-        right: -25px;
-        width: 200px;
-        @media screen and (max-width: 768px)
-        {
-            width: 150px;
-        }
-        @media screen and (max-width: 425px)
-        {
-            width: 120px;
-            top: -50px;
         }
     }
     .shape-box-border-sm

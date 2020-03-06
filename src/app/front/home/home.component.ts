@@ -108,7 +108,7 @@ export class HomeComponent implements OnInit {
   {
     let link = document.createElement("a");
     link.download = "John-Paul-Sebastian-Details";
-    link.href = "../../../assets/my-cv.pdf";
+    link.href = "../../../assets/my-cv-updated.pdf";
     link.click();
   }
 
