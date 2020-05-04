@@ -5,7 +5,7 @@
     position: fixed;
     width: 100%;
     padding: 25px 0px;
-    background-color: rgba(#222222, .5);
+    background-color: rgba(#333333, .30);
     z-index: 999;
     transition: .5s all ease;
     @media (max-width: 425px)
@@ -22,7 +22,7 @@
             img
             {
                 width: 60px;
-                filter: invert(100);
+                filter: invert(100) brightness(500%) contrast(200%);
             }
         }
         .navigation-links
@@ -50,13 +50,13 @@
                         transition: .5s all ease;
                         &:hover
                         {
-                            color: #F6D671;
+                            color: #f2b03d;
                             transition: .5s all ease;
                         }
                     }
                     .active
                     {
-                        color: #F6D671;
+                        color: #f2b03d;
                     }
                 }
                 .nav-items:first-child
@@ -106,17 +106,17 @@
                 {
                     .nav-link
                     {
-                        color: #222222;
+                        color: #333333;
                         transition: .5s all ease;
                         &:hover
                         {
-                            color: #F6D671;
+                            color: #f2b03d;
                             transition: .5s all ease;
                         }
                     }
                     .active
                     {
-                        color: #F6D671;
+                        color: #f2b03d;
                     }
                 }
             }
@@ -162,24 +162,23 @@
                 {
                     text-align: center;
                 }
-                .title-secondary
-                {
-                    font-family: 'Montserrat';
-                    font-weight: 400;
-                    font-size: 15px;
-                    color: #ffffff;
-                    opacity: .8;
-                }
                 .title-primary
                 {
                     font-family: 'Barlow Condensed';
                     font-weight: 600;
                     font-size: 30px;
-                    color: #F6D671;
+                    color: #f2b03d;
                     span
                     {
                         color: #ffffff;
                     }
+                }
+                .title-secondary
+                {
+                    font-family: 'Montserrat';
+                    font-weight: 400;
+                    font-size: 15px;
+                    color: rgba(#ffffff, .75);
                 }
             }
             .contact__content-content
@@ -240,7 +239,7 @@
                             font-family: 'Montserrat';
                             font-weight: 600;
                             font-size: 13px;
-                            color: #F6D671;
+                            color: #f2b03d;
                         }
                     }
                 }
@@ -265,7 +264,7 @@
                 text-align: center;
                 img
                 {
-                    filter: invert(100);
+                    filter: invert(100) brightness(500%) contrast(200%);
                     width: 80px;
                 }
             }
@@ -287,12 +286,11 @@
                         margin-left: 50px;
                         .nav-link
                         {
-                            color: #ffffff;
+                            color: rgba(#ffffff, .75);
                             font-family: 'Montserrat';
                             font-size: 13px;
                             font-weight: 400;
                             text-decoration: none;
-                            opacity: .7;
                             transition: .5s all ease;
                             &:hover
                             {
@@ -356,7 +354,7 @@
                 padding: 5px 0px;
                 a
                 {
-                    color: #F6D671;
+                    color: #f2b03d;
                     font-family: 'Barlow Condensed';
                     font-weight: 600;
                     font-size: 20px;

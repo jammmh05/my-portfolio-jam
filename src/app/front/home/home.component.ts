@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.multiSlider();
-    this.ParallaxHome();
+    // this.ParallaxHome();
     this.LaxforObjexts();
     this.LightGallery();
     this.ParollerParallax();
@@ -68,12 +68,12 @@ export class HomeComponent implements OnInit {
     });
   }
 
-  ParallaxHome()
-  {
-    const boxframe = new Rellax('.shape-box-dotted-lg');
-    const arrowup = new Rellax('.shape-multiple-arrow');
-    const boxdottedsm = new Rellax('.shape-box-dotted-sm-white');
-  }
+  // ParallaxHome()
+  // {
+  //   const boxframe = new Rellax('.shape-box-dotted-lg');
+  //   const arrowup = new Rellax('.shape-multiple-arrow');
+  //   const boxdottedsm = new Rellax('.shape-box-dotted-sm-white');
+  // }
 
   LaxforObjexts()
   {

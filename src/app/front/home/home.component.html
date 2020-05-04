@@ -3,18 +3,16 @@
         <div class="home">
             <div class="home__content">
                 <div class="home__content-title">
-                    <div class="title-secondary">
+                    <!-- <div class="title-secondary">
                         Welcome to my portfolio
-                    </div>
+                    </div> -->
                     <div class="title-primary">
-                        I'M JOHN PAUL M SEBASTIAN
+                        WELCOME TO MY PORTFOLIO <br>
+                        I'M JOHN PAUL
                     </div>
                     <div class="title-desc">
                         Let's work together.
                     </div>
-                </div>
-                <div class="home__content-btn">
-                    <button class="main-btn" (click)="downloadMyPDF()" [routerLink]="['']">VIEW MY DETAILS</button>
                 </div>
             </div>
         </div>
@@ -36,19 +34,80 @@
     ></div>
 
     <img
-        src="../../../assets/shape-stripe-assets-lg.svg"
-        class="shape-stripe-lg lax"
+        src="../../../assets/Assets/home_assets-1.png"
+        class="home-asset-lg lax"
         data-lax-preset="lazy">
 
     <img
-        src="../../../assets/shape-stripe-assets-md.svg"
-        class="shape-stripe-md lax"
+        src="../../../assets/Assets/home_assets-2.png"
+        class="home-asset-md lax"
         data-lax-preset="lazy">
 
     <img
-        src="../../../assets/shape-stripe-assets-sm.svg"
-        class="shape-stripe-sm"
-        >
+        src="../../../assets/Assets/home_assets-3.png"
+        class="home-asset-sm lax"
+        data-lax-preset="lazy">
+</section>
+
+<section class="work-container" id ="work">
+    <div class="container">
+        <div class="work">
+            <div class="work__content">
+                <div class="work__content-title">
+                    <div class="title-primary">
+                        WORK <span>COLLECTION</span>
+                    </div>
+                    <div class="title-secondary">
+                        My creativity and passion.
+                    </div>
+                </div>
+
+                <div class="work__content-content">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper" id="lightgallery">
+                            <a class="swiper-slide" href="../../../assets/work-1_1.jpg">
+                                <img src="../../../assets/work-1.jpg">
+                            </a>
+                            <a class="swiper-slide" href="../../../assets/work-2_1.jpg">
+                                <img src="../../../assets/work-2.jpg">
+                            </a>
+                            <a class="swiper-slide" href="../../../assets/work-3_1.jpg">
+                                <img src="../../../assets/work-3.jpg">
+                            </a>
+                            <a class="swiper-slide" href="../../../assets/work-4_1.jpg">
+                                <img src="../../../assets/work-4.jpg">
+                            </a>
+                            <a class="swiper-slide" href="../../../assets/work-5_1.jpg">
+                                <img src="../../../assets/work-5.jpg">
+                            </a>
+                            <a class="swiper-slide" href="../../../assets/work-6_1.jpg">
+                                <img src="../../../assets/work-6.jpg">
+                            </a>
+                            <a class="swiper-slide" href="../../../assets/work-7_1.jpg">
+                                <img src="../../../assets/work-7.jpg">
+                            </a>
+                            <a class="swiper-slide" href="../../../assets/work-8_1.jpg">
+                                <img src="../../../assets/work-8.jpg">
+                            </a>
+                            <a class="swiper-slide" href="../../../assets/work-9_1.jpg">
+                                <img src="../../../assets/work-9.jpg">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-btn">
+                        <div class="swiper-prev">
+                            <img src="../../../assets/icon-prev.svg">
+                        </div>
+                        <div class="swiper-next">
+                            <img src="../../../assets/icon-next.svg">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </section>
 
 <section class="about-container" id="about">
@@ -56,89 +115,115 @@
         <div class="about">
             <div class="about__content">
                 <div class="about__content-title">
-                    <div class="title-secondary">
-                        I'm your Web Designer and Front-End Developer.
-                    </div>
                     <div class="title-primary">
-                        ABOUT <span>MYSELF</span>
+                        ABOUT <span>ME</span>
+                    </div>
+                    <div class="title-secondary">
+                        I am a Creative Designer and <br>
+                        Frontend Developer
                     </div>
                 </div>
                 <div class="about__content-content">
                     <div class="content-info">
-                        <div class="content-info__container">
-                            <div class="info__label">
-                                Full Name
+                        <div class="content-info__title">
+                            <div class="content-info__title-primary">
+                                Hi I'm John Paul, your Creative Designer.
                             </div>
-                            <div class="info__myinfo">
-                                John Paul Marcelo Sebastian
-                            </div>
-                        </div>
-                        <div class="content-info__container">
-                            <div class="info__label">
-                                Nick Name
-                            </div>
-                            <div class="info__myinfo">
-                                Jam
+                            <div class="content-info__title-border"></div>
+                            <div class="content-info__title-desc">
+                                A very passionate and enthusiastic person with vast creativity and proven skills in graphic designing and management skills willingly to expand his knowledge and experience.
                             </div>
                         </div>
-                        <div class="content-info__container">
-                            <div class="info__label">
-                                Address
+                        <div class="content-info__info">
+                            <div class="content-info__info-container">
+                                <div class="info-label">
+                                    Fullname:
+                                </div>
+                                <div class="info-data">
+                                    John Paul Sebastian
+                                </div>
                             </div>
-                            <div class="info__myinfo">
-                                Poblacion, Pandi, Bulacan
+                            <div class="content-info__info-container">
+                                <div class="info-label">
+                                    Nickname:
+                                </div>
+                                <div class="info-data">
+                                    Jam
+                                </div>
+                            </div>
+                            <div class="content-info__info-container">
+                                <div class="info-label">
+                                    Contact Number:
+                                </div>
+                                <div class="info-data">
+                                    0945 - 413 -5652
+                                </div>
+                            </div>
+                            <div class="content-info__info-container">
+                                <div class="info-label">
+                                    Email Address:
+                                </div>
+                                <div class="info-data">
+                                    sebastianjhonpaul@gmail.com
+                                </div>
+                            </div>
+                            <div class="content-info__info-container">
+                                <div class="info-label">
+                                    Studied:
+                                </div>
+                                <div class="info-data">
+                                    Bachelor of Science in Information Systems
+                                </div>
+                            </div>
+                            <div class="content-info__info-container">
+                                <div class="info-label">
+                                    School Graduate:
+                                </div>
+                                <div class="info-data">
+                                    Immaculate Conception I-College of Arts and Technology
+                                </div>
                             </div>
                         </div>
-                        <div class="content-info__container">
-                            <div class="info__label">
-                                Date of Birth
-                            </div>
-                            <div class="info__myinfo">
-                                January 05, 1999
-                            </div>
-                        </div>
-                        <div class="content-info__container">
-                            <div class="info__label">
-                                Phone Number
-                            </div>
-                            <div class="info__myinfo">
-                                0945 - 413 -5652
-                            </div>
-                        </div>
-                        <div class="content-info__container">
-                            <div class="info__label">
-                                Email
-                            </div>
-                            <div class="info__myinfo">
-                                sebastianjhonpaul@gmail.com
-                            </div>
-                        </div>
-                        <div class="content-info__container">
-                            <div class="info__label">
-                                Graduated at
-                            </div>
-                            <div class="info__myinfo">
-                                Immaculate Conception I-College of Arts and Technology
-                            </div>
-                        </div>
-                        <div class="content-info__container">
-                            <div class="info__label">
-                                Studied
-                            </div>
-                            <div class="info__myinfo">
-                                Bachelor of Science in Information Systems
-                            </div>
+                        <div class="content-info__btn">
+                            <button class="main-btn" (click)="downloadMyPDF()" [routerLink]="['']">DOWNLOAD CV</button>
+                            <button class="outline-btn">MY WORKS</button>
                         </div>
                     </div>
                     <div class="content-image">
-                        <img src="../../../assets/myImage.jpg">
+                        <img src="../../../assets/Assets/about_my-photo.png">
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- shape-object -->
+
+    <!-- shape-object-assets -->
     <img
+        src="../../../assets/Assets/profile-asset_1.svg"
+        class="about_asset-1 lax"
+        data-lax-preset="lazy"
+    >
+
+    <img
+        src="../../../assets/Assets/profile-asset_2.svg"
+        class="about_asset-2 lax"
+        data-lax-preset="lazy"
+    >
+
+    <img
+        src="../../../assets/Assets/profile-asset_3.svg"
+        class="about_asset-3 lax"
+        data-lax-preset="lazy"
+    >
+
+    <img
+        src="../../../assets/Assets/profile-asset_4.svg"
+        class="about_asset-4 lax"
+        data-lax-preset="lazy"
+    >
+
+    <!-- shape-object -->
+    <!-- <img
         src="../../../assets/shape-box-dotted-sm-white.svg"
         class="shape-box-dotted-sm-white rellax"
         data-rellax-speed="6"
@@ -193,160 +278,20 @@
     <img
         src="../../../assets/shape-multiple-arrow.svg"
         class="shape-multiple-arrow rellax"
-        data-rellax-speed="4">
-</section>
+        data-rellax-speed="4"> -->
 
-<section class="work-container" id ="work">
-    <div class="container">
-        <div class="work">
-            <div class="work__content">
-                <div class="work__content-title">
-                    <div class="title-secondary">
-                        Fruits of my creativity and passion.
-                    </div>
-                    <div class="title-primary">
-                        WORK <span>COLLECTION</span>
-                    </div>
-                </div>
-
-                <div class="work__content-content">
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper" id="lightgallery">
-                            <a class="swiper-slide" href="../../../assets/work-1_1.jpg">
-                                <img src="../../../assets/work-1.jpg">
-                            </a>
-                            <a class="swiper-slide" href="../../../assets/work-2_1.jpg">
-                                <img src="../../../assets/work-2.jpg">
-                            </a>
-                            <a class="swiper-slide" href="../../../assets/work-3_1.jpg">
-                                <img src="../../../assets/work-3.jpg">
-                            </a>
-                            <a class="swiper-slide" href="../../../assets/work-4_1.jpg">
-                                <img src="../../../assets/work-4.jpg">
-                            </a>
-                            <a class="swiper-slide" href="../../../assets/work-5_1.jpg">
-                                <img src="../../../assets/work-5.jpg">
-                            </a>
-                            <a class="swiper-slide" href="../../../assets/work-6_1.jpg">
-                                <img src="../../../assets/work-6.jpg">
-                            </a>
-                            <a class="swiper-slide" href="../../../assets/work-7_1.jpg">
-                                <img src="../../../assets/work-7.jpg">
-                            </a>
-                            <a class="swiper-slide" href="../../../assets/work-8_1.jpg">
-                                <img src="../../../assets/work-8.jpg">
-                            </a>
-                            <a class="swiper-slide" href="../../../assets/work-9_1.jpg">
-                                <img src="../../../assets/work-9.jpg">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="swiper-btn">
-                        <div class="swiper-prev">
-                            <img src="../../../assets/icon-prev.svg">
-                        </div>
-                        <div class="swiper-next">
-                            <img src="../../../assets/icon-next.svg">
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="experience-container" id="experience">
-    <div class="container">
-        <div class="experience">
-            <div class="experience__content">
-                <div class="experience__content-title">
-                    <div class="title-secondary">
-                        Sharpening my skills as its greatest.
-                    </div>
-                    <div class="title-primary">
-                        EDUCATION & <span>WORK EXPERIENCE</span>
-                    </div>
-                </div>
-                <div class="experience__content-content">
-                    <div class="content-info">
-                        <div class="content-info__img">
-                            <img src="../../../assets/icon-education.svg">
-                        </div>
-                        <div class="content-info__info">
-                            <div class="info-label">
-                                Highschool
-                            </div>
-                            <div class="info-desc">
-                                Holy Angels’ College, Pandi, Bulacan <br>
-                                2011 - 2015
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content-info">
-                        <div class="content-info__img">
-                            <img src="../../../assets/icon-education.svg">
-                        </div>
-                        <div class="content-info__info">
-                            <div class="info-label">
-                                College
-                            </div>
-                            <div class="info-desc">
-                                Immaculate Conception I-College of Arts and Technology
-                                <br>
-                                2015 - 2019
-                                <br>
-                                <span>Bachelor of Science in Information Systems - BSIS</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content-info">
-                        <div class="content-info__img">
-                            <img src="../../../assets/icon-work.svg">
-                        </div>
-                        <div class="content-info__info">
-                            <div class="info-label">
-                                Web Designer and Front-End Developer
-                            </div>
-                            <div class="info-desc">
-                                Digima Web Solutions Inc.
-                                <br>
-                                Nov. 18, 2018 - Dec. 01, 2019
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content-info">
-                        <div class="content-info__img">
-                            <img src="../../../assets/icon-work.svg">
-                        </div>
-                        <div class="content-info__info">
-                            <div class="info-label">
-                                Front-End Developer
-                            </div>
-                            <div class="info-desc">
-                                My Solid Technologies and Devices Corporation
-                                <br>
-                                Dec. 01, 2019 - Present
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
 <section class="skills-container" id="skills">
     <div class="container">
         <div class="skills">
             <div class="skills-content">
                 <div class="skills__content-title">
-                    <div class="title-secondary">
-                        The tools of innovation.
-                    </div>
                     <div class="title-primary">
                         MY <span>SKILLS</span>
+                    </div>
+                    <div class="title-secondary">
+                        The tools of innovation.
                     </div>
                 </div>
                 <div class="skills__content-content">
