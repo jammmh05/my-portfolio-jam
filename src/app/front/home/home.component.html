@@ -3,15 +3,16 @@
         <div class="home">
             <div class="home__content">
                 <div class="home__content-title">
-                    <!-- <div class="title-secondary">
-                        Welcome to my portfolio
-                    </div> -->
                     <div class="title-primary">
                         WELCOME TO MY PORTFOLIO <br>
                         I'M JOHN PAUL
                     </div>
                     <div class="title-desc">
                         Let's work together.
+                    </div>
+                    <div class="title-btn">
+                        <button class="main-btn" (click)="downloadMyPDF()" [routerLink]="['']">DOWNLOAD CV</button>
+                        <button class="outline-btn">MY WORKS</button>
                     </div>
                 </div>
             </div>
@@ -131,8 +132,11 @@
                             </div>
                             <div class="content-info__title-border"></div>
                             <div class="content-info__title-desc">
-                                A very passionate and enthusiastic person with vast creativity and proven skills in graphic designing and management skills willingly to expand his knowledge and experience.
+                                A very passionate and enthusiastic person with vast creativity and proven skills in graphic designing and web development, willingly to expand his knowledge and experience.
                             </div>
+                        </div>
+                        <div class="content-info__img-mobile">
+                            <img src="../../../assets/Assets/about_my-photo-mobile.jpg" alt="">
                         </div>
                         <div class="content-info__info">
                             <div class="content-info__info-container">
@@ -177,16 +181,12 @@
                             </div>
                             <div class="content-info__info-container">
                                 <div class="info-label">
-                                    School Graduate:
+                                    School Graduated:
                                 </div>
                                 <div class="info-data">
                                     Immaculate Conception I-College of Arts and Technology
                                 </div>
                             </div>
-                        </div>
-                        <div class="content-info__btn">
-                            <button class="main-btn" (click)="downloadMyPDF()" [routerLink]="['']">DOWNLOAD CV</button>
-                            <button class="outline-btn">MY WORKS</button>
                         </div>
                     </div>
                     <div class="content-image">
@@ -194,33 +194,34 @@
                     </div>
                 </div>
             </div>
+
+            <!-- shape-object-assets -->
+            <img
+            src="../../../assets/Assets/profile-asset_1.svg"
+            class="about-asset about_asset-1 lax"
+            data-lax-preset="lazy"
+            >
+
+            <img
+                src="../../../assets/Assets/profile-asset_2.svg"
+                class="about-asset about_asset-2 lax"
+                data-lax-preset="lazy"
+            >
+
+            <img
+                src="../../../assets/Assets/profile-asset_3.svg"
+                class="about-asset about_asset-3 lax"
+                data-lax-preset="lazy"
+            >
+
+            <img
+                src="../../../assets/Assets/profile-asset_4.svg"
+                class="about-asset about_asset-4 lax"
+                data-lax-preset="lazy"
+            >
+
         </div>
     </div>
-
-    <!-- shape-object-assets -->
-    <img
-        src="../../../assets/Assets/profile-asset_1.svg"
-        class="about_asset-1 lax"
-        data-lax-preset="lazy"
-    >
-
-    <img
-        src="../../../assets/Assets/profile-asset_2.svg"
-        class="about_asset-2 lax"
-        data-lax-preset="lazy"
-    >
-
-    <img
-        src="../../../assets/Assets/profile-asset_3.svg"
-        class="about_asset-3 lax"
-        data-lax-preset="lazy"
-    >
-
-    <img
-        src="../../../assets/Assets/profile-asset_4.svg"
-        class="about_asset-4 lax"
-        data-lax-preset="lazy"
-    >
 
     <!-- shape-object -->
     <!-- <img
@@ -279,8 +280,7 @@
         src="../../../assets/shape-multiple-arrow.svg"
         class="shape-multiple-arrow rellax"
         data-rellax-speed="4"> -->
-
-    </section>
+</section>
 
 <section class="skills-container" id="skills">
     <div class="container">
@@ -288,7 +288,7 @@
             <div class="skills-content">
                 <div class="skills__content-title">
                     <div class="title-primary">
-                        MY <span>SKILLS</span>
+                        USED <span>TECHNOLOGIES</span>
                     </div>
                     <div class="title-secondary">
                         The tools of innovation.
@@ -440,6 +440,7 @@
                                 <img src="../../../assets/icon-star.svg">
                                 <img src="../../../assets/icon-star.svg">
                                 <img src="../../../assets/icon-star.svg">
+                                <img src="../../../assets/icon-star.svg">
                             </div>
                         </div>
                     </div>
@@ -453,6 +454,7 @@
                                 Git
                             </div>
                             <div class="info-rating">
+                                <img src="../../../assets/icon-star.svg">
                                 <img src="../../../assets/icon-star.svg">
                                 <img src="../../../assets/icon-star.svg">
                                 <img src="../../../assets/icon-star.svg">
@@ -503,6 +505,7 @@
                                 Quasar Framework
                             </div>
                             <div class="info-rating">
+                                <img src="../../../assets/icon-star.svg">
                                 <img src="../../../assets/icon-star.svg">
                                 <img src="../../../assets/icon-star.svg">
                                 <img src="../../../assets/icon-star.svg">
