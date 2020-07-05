@@ -32,7 +32,7 @@ export class HomeComponent implements OnInit {
       effect: 'coverflow',
       grabCursor: true,
       centeredSlides: true,
-      slidesPerView: '3',
+      slidesPerView: 'auto',
       coverflowEffect: {
         rotate: 50,
         stretch: 0,
@@ -49,9 +49,6 @@ export class HomeComponent implements OnInit {
         prevEl: '.swiper-prev',
       },
       breakpoints: {
-        1920: {
-          slidesPerView: 3,
-        },
         1366: {
           slidesPerView: 3,
         },
