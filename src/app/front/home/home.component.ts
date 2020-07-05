@@ -32,7 +32,7 @@ export class HomeComponent implements OnInit {
       effect: 'coverflow',
       grabCursor: true,
       centeredSlides: true,
-      slidesPerView: 'auto',
+      slidesPerView: '3',
       coverflowEffect: {
         rotate: 50,
         stretch: 0,
