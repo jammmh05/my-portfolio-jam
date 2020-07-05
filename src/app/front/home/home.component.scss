@@ -8,6 +8,7 @@
     height: 100vh;
     position: relative;
     overflow: hidden;
+    outline: none !important;
 
     .home {
         display: flex;
@@ -180,6 +181,7 @@
 .work-container {
     background-color: #ffffff;
     padding: 100px 0px;
+    outline: none !important;
 
     .work {
         .work__content {
@@ -303,6 +305,7 @@
     position: relative;
     overflow: hidden;
     z-index: -2;
+    outline: none !important;
 
     .about {
         .about__content {
@@ -491,6 +494,7 @@
 .skills-container {
     padding: 100px 0px;
     background-color: #ffffff;
+    outline: none !important;
 
     .skills {
         .skills-content {
